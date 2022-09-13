@@ -36,3 +36,17 @@ Deep Learning course at NYCU
 **_train_std.pt_**: 訓練資料圖片張量的標準差
 
 ## Lab 4
+### 概念: cVAE(有條件的VAE)
+#### _Data太大不方便傳上來，請自行去spec網址下載_
+#### 這次作業training要花超久(用課堂server的1000系列gpu跑一次就要花2天)，建議早點開始
+**_CVAE參考論文.pdf_**: 附在spec的reference中，有關用fixed prior和learned prior(加分題，但時間不夠我沒做)做video prediction，強烈建議看一下，會比較知道要幹嘛  
+**_Lab4_Conditional_VAE_for_Video_Prediction.pdf_**: spec  
+**_Report.pdf_**: 報告  
+**_dataset.py_**: 讀取並整理成資料集的程式碼(附上的)  
+**_evaluation.py_**: 自己寫的測試模型程式碼，會印出幾次測試平均的psnr值，以及生成隨機一筆測試影片的預測gif以及圖片序列  
+**_evaluation_utils.py_**: 模型測試時，會用到的一些工具函數，上面這個_evaluation.py_需要import這檔案  
+**_kl_annealing.py_**: 模型測試時，把KL annealing的class單獨拉出來寫成一個檔案，然後_evaluation.py_也需要import這檔案  
+**_train_fixed_prior.py_**: cVAE基於fixed prior來預測影片，本次作業主程式，附上但多處原本挖空  
+**_utils.py_**: 工具函數，附上的但有些函數原本沒給要自己刻
+
+## Lab 5
