@@ -36,7 +36,7 @@ Deep Learning course at NYCU
 **_train_std.pt_**: 訓練資料圖片張量的標準差
 
 ## Lab 4
-### 概念: cVAE(有條件的VAE)
+### 概念: cVAE(有條件的VAE)、LSTM、CNN
 #### _Data太大不方便傳上來，請自行去spec網址下載_
 #### 這次作業training要花超久(用課堂server的1000系列gpu跑一次就要花2天)，建議早點開始
 **_models_**: 附上的，裡面包含2個檔案，總共4種模型  
@@ -54,3 +54,22 @@ Deep Learning course at NYCU
 **_utils.py_**: 工具函數，附上的但有些函數原本沒給要自己刻
 
 ## Lab 5
+### 概念: GAN(架構、模型、損失函數全自己挑)
+#### _Data太大不方便傳上來，請自行去spec網址下載_
+#### 這次作業很難表現的很好:(...
+**_Lab5_Let_s_Play_GANs.pdf_**: spec  
+**_Report.pdf_**: 報告  
+**_checkpoint.pth_**: _evaluator.py_ 中的評估模型的pretrained參數(附上的)  
+**_dataset.py_**: 讀取和整理成資料集的程式碼  
+**_evaluator.py_**: 測試階段使用。需要call這個class中"eval"這個方法，把模型生成的圖片和真正標籤丟進去，就會回傳準確率(附上的)  
+**_main.py_**: 本次作業主程式  
+**_model.py_**: GAN中的**Generator**和**Discriminator**的模型架構  
+**_new_test.json_**: 測試資料的文字描述，期限前幾天才會公布(附上的)  
+**_objects.json_**: 把顏色形狀描述的文字轉換成數字標籤(附上的)  
+**_readme.txt_**: 有關_objects.json_、_train.json_、_test.json_ 的說明(附上的)  
+**_test.json_**: 評估資料的文字描述(附上的)  
+**_train.json_**: 訓練資料的文字描述(附上的)。訓練資料除了文字描述，也會有真正的圖片  
+**_utils.py_**: 工具函數，用來讀取_test.json_或是_new_test.json_
+
+## Lab 6
+### 概念: 
