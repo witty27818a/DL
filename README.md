@@ -39,6 +39,9 @@ Deep Learning course at NYCU
 ### 概念: cVAE(有條件的VAE)
 #### _Data太大不方便傳上來，請自行去spec網址下載_
 #### 這次作業training要花超久(用課堂server的1000系列gpu跑一次就要花2天)，建議早點開始
+**_models_**: 附上的，裡面包含2個檔案，總共4種模型  
+  **_lstm.py_**: 兩種LSTM模型，一種是用在Encoder和Decoder中間叫做**Frame Predictor**，另一種是用在**Prior**  
+  **_vgg_64.py_**: 兩種CNN類模型，一種是**Encoder**，另一種是**Decoder**  
 **_CVAE參考論文.pdf_**: 附在spec的reference中，有關用fixed prior和learned prior(加分題，但時間不夠我沒做)做video prediction，強烈建議看一下，會比較知道要幹嘛  
 **_Lab4_Conditional_VAE_for_Video_Prediction.pdf_**: spec  
 **_Report.pdf_**: 報告  
