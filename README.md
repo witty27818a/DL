@@ -72,7 +72,7 @@ Deep Learning course at NYCU
 **_utils.py_**: 工具函數，用來讀取_test.json_或是_new_test.json_
 
 ## Lab 6
-### 概念: DPG、DDQN(強化學習)
+### 概念: DQN、DDPG(強化學習)
 #### 使用到的遊戲需要自己pip install那個library
 **_2022-Lab6-DQN-DDPG.pdf_**: spec  
 **_DDPG.py_**: DDPG的程式碼，附上但多處原本挖空  
